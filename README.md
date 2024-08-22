@@ -29,12 +29,11 @@ A continuación se listan algunos comandos útiles de Git:
    git status
 
 2. **Añadir Archivos:**
-     Individuales:
+     Individuales
     ```bash
      git add <archivo>
 
      Todos los Archivos:
-    ```bash
      git add .
 
 3. **Agregar comentarios al commit:**
