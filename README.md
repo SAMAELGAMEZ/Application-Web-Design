@@ -7,5 +7,5 @@
 
 ## Información de la Asignatura
 
-**Nombre de la asignatura:** Diseño de Aplicaciones Web
+**Nombre de la asignatura:** Diseño de Aplicaciones Web 
 **Profesor:** Jesús Garza Guerrero
