@@ -37,7 +37,7 @@ A continuación se listan algunos comandos útiles de Git:
      git add .
 
 4. **Agregar comentarios al commit:**
-|   ```bash
+    ```bash
     git commit -m "Mensaje del commit"
 
 5. **Subir cambios al repositorio remoto:**
