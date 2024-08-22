@@ -28,31 +28,36 @@ A continuación se listan algunos comandos útiles de Git:
    ```bash
    git status
 
-2. **Añadir Archivos:**
-     Individuales
+2. **Añadir Archivos Individuales:**
     ```bash
      git add <archivo>
 
-     Todos los Archivos:
+3. **Añadir Todos los Archivos:**
+    ```bash
      git add .
 
-3. **Agregar comentarios al commit:**
+4. **Agregar comentarios al commit:**
+|   ```bash
     git commit -m "Mensaje del commit"
 
-4. **Subir cambios al repositorio remoto:**
+5. **Subir cambios al repositorio remoto:**
+    ```bash
     git push origin <rama>
 
-5. **Manejo de Armas:**
-    Crear una nueva rama: 
+6. **Crear Nueva Rama:**
+    ```bash 
     git branch <nombre-de-la-rama>
 
-    Cambiar de rama:
+7. **Cambiar de rama:**
+    ```bash 
     git checkout <nombre-de-la-rama>
 
-    Eliminar una rama:
+8. **Eliminar una rama:**
+    ```bash
     git branch -d <nombre-de-la-rama>
 
-6. **Hacer rollback a un commit específico:**
+9. **Hacer rollback a un commit específico:**
+    ```bash
     git reset --hard <ID-del-commit>
 
 
