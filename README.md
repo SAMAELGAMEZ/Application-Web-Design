@@ -29,11 +29,13 @@ A continuación se listan algunos comandos útiles de Git:
    git status
 
 2. **Añadir Archivos:**
-    Individuales:
-    git add <archivo>
+     Individuales:
+    ```bash
+     git add <archivo>
 
-    Todos los Archivos:
-    git add .
+     Todos los Archivos:
+    ```bash
+     git add .
 
 3. **Agregar comentarios al commit:**
     git commit -m "Mensaje del commit"
@@ -42,7 +44,7 @@ A continuación se listan algunos comandos útiles de Git:
     git push origin <rama>
 
 5. **Manejo de Armas:**
-    Crear una nueva rama:
+    Crear una nueva rama: 
     git branch <nombre-de-la-rama>
 
     Cambiar de rama:
