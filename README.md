@@ -59,7 +59,3 @@ A continuación se listan algunos comandos útiles de Git:
 9. **Hacer rollback a un commit específico:**
     ```bash
     git reset --hard <ID-del-commit>
-
-
-
-
