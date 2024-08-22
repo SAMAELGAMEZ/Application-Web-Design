@@ -10,7 +10,7 @@
 **Nombre de la asignatura:** Diseño de Aplicaciones Web  
 **Profesor:** Jesús Garza Guerrero  
 
-Markdown ofrece varias opciones de etiquetado para dar formato al texto:
+## Markdown ofrece varias opciones de etiquetado para dar formato al texto:
 
 - **Encabezados:** Se crean usando el símbolo `#`. Ejemplo: `# Encabezado 1`, `## Encabezado 2`.
 - **Negritas:** Se usan dos asteriscos `**` o guiones bajos `__`. Ejemplo: `**texto en negrita**`.
