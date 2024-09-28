@@ -59,3 +59,44 @@ A continuación se listan algunos comandos útiles de Git:
 9. **Hacer rollback a un commit específico:**
     ```bash
     git reset --hard <ID-del-commit>
+
+# Actividad 6: Gestión de Productos en Laravel
+
+Se creo una carpeta llamada products dentro de resoures/views
+creando 3 archivos tipo php con estos mismos formatos:
+
+1. **view.blade.php:**
+   ```bash
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Product View</title>
+    </head>
+    <body>
+        <!--CONTENIDO-->
+    </body>
+    </html>
+
+2. **edit.blade.php:**
+   ```bash
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Product Editing</title>
+    </head>
+    <body>
+        <!--CONTENIDO-->
+    </body>
+    </html>
+
+3. **create.blade.php:**
+   ```bash
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>New Product Creation</title>
+    </head>
+    <body>
+        <!--CONTENIDO-->
+    </body>
+    </html>
