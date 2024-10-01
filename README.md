@@ -110,7 +110,7 @@ Sistema de Gestión para Escuela de Robótica
 Este proyecto es un sistema de gestión para una pequeña escuela de robótica que permite a los profesores gestionar cursos, a los estudiantes inscribirse en grupos, y a los administradores supervisar la plataforma.
 
 ## Diagrama ER
-![Diagrama ER](Application-Web-Design/activity7/Diagrama ER.png)
+![ER Diagram](Application-Web-Design/activity7/Diagrama ER.png)
 
 El esquema de la base de datos incluye entidades como usuarios, grupos, cursos y materiales didácticos. También soporta múltiples roles: estudiantes, profesores y administradores.
 
