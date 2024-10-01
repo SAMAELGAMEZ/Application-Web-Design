@@ -100,3 +100,38 @@ creando 3 archivos tipo php con estos mismos formatos:
         <!--CONTENIDO-->
     </body>
     </html>
+
+# Proyecto Activity 7
+
+## Nombre del Proyecto
+Sistema de Gestión para Escuela de Robótica
+
+## Descripción del Proyecto
+Este proyecto es un sistema de gestión para una pequeña escuela de robótica que permite a los profesores gestionar cursos, a los estudiantes inscribirse en grupos, y a los administradores supervisar la plataforma.
+
+## Diagrama ER
+![Diagrama ER](Application-Web-Design/activity7/Diagrama ER.png)
+
+El esquema de la base de datos incluye entidades como usuarios, grupos, cursos y materiales didácticos. También soporta múltiples roles: estudiantes, profesores y administradores.
+
+## Instalación
+1. Clona el repositorio.
+2. Ejecuta `composer install`.
+3. Configura tu archivo `.env`.
+4. Ejecuta las migraciones: `php artisan migrate`.
+5. Población de la base de datos: `php artisan db:seed`.
+6. Inicia el servidor: `php artisan serve`.
+
+## Usuarios registrados de prueba
+- **Administrador:**
+  - Usuario: Admon
+  - Correo: admon@robotics.com
+  - Contraseña: Adm@2022
+- **Profesor:**
+  - Usuario: Tecmilenio
+  - Correo: tecmilenio@robotics.com
+  - Contraseña: Adm@2022
+- **Estudiante:**
+  - Usuario: Student
+  - Correo: student@robotics.com
+  - Contraseña: Adm@2022
