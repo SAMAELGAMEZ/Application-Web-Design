@@ -22,11 +22,11 @@ class SuperheroController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View
      */
     public function create()
     {
-        //
+        return view('superheroes.create');
     }
 
     /**
@@ -37,29 +37,40 @@ class SuperheroController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'real_name' => 'required|max:75',
+            'hero_name' => 'required|max:75',
+            'photo_url' => 'required|url',
+            'additional_info' => 'required',
+        ]);
+
+        Superhero::create($validatedData);
+
+        return redirect('/superheroes')->with('success', 'Superhero is successfully saved');
     }
 
     /**
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View
      */
     public function show($id)
     {
-        //
+        $superhero = Superhero::findOrFail($id); // Busca el superhéroe o lanza un error si no lo encuentra
+        return view('superheroes.show', compact('superhero'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View
      */
     public function edit($id)
     {
-        //
+        $superhero = Superhero::findOrFail($id); // Encuentra el superhéroe por su ID
+        return view('superheroes.edit', compact('superhero'));
     }
 
     /**
@@ -71,7 +82,17 @@ class SuperheroController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validatedData = $request->validate([
+            'real_name' => 'required|max:75',
+            'hero_name' => 'required|max:75',
+            'photo_url' => 'required|url',
+            'additional_info' => 'required',
+        ]);
+
+        $superhero = Superhero::findOrFail($id);
+        $superhero->update($validatedData);
+
+        return redirect('/superheroes')->with('success', 'Superhero is successfully updated');
     }
 
     /**
@@ -82,6 +103,9 @@ class SuperheroController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $superhero = Superhero::findOrFail($id); // Busca el superhéroe por su ID
+        $superhero->delete(); // Elimina el superhéroe
+
+        return redirect('/superheroes')->with('success', 'Superhero data is successfully deleted');
     }
 }
