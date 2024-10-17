@@ -7,6 +7,7 @@ use App\Http\Requests\Auth\LoginRequest;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Notifications\LoginAlert;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -28,9 +29,21 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request)
     {
-        $request->authenticate();
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+
+        if (!Auth::attempt($request->only('email', 'password'), $request->filled('remember'))) {
+            return back()->withErrors([
+                'email' => 'Las credenciales no coinciden con nuestros registros.',
+            ])->withInput();
+        }
 
         $request->session()->regenerate();
+
+        // Enviar correo de alerta de inicio de sesión
+        Auth::user()->notify(new LoginAlert());
 
         return redirect()->intended(RouteServiceProvider::HOME);
     }
