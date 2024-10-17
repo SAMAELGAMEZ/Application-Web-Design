@@ -135,3 +135,13 @@ El esquema de la base de datos incluye entidades como usuarios, grupos, cursos y
   - Usuario: Student
   - Correo: student@robotics.com
   - Contraseña: Adm@2022
+
+# Activity 9
+
+Este proyecto de Laravel 8 implementa un sistema de autenticación. Los usuarios no registrados ven una página de aterrizaje (landingpage), mientras que los usuarios autenticados acceden a un dashboard.
+
+## Instrucciones
+
+1. Regístrate o inicia sesión para acceder al dashboard.
+2. Los usuarios no registrados solo pueden ver la landingpage.
+3. La barra de navegación cambia según si el usuario está autenticado o no.
