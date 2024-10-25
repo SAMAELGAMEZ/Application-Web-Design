@@ -18,6 +18,7 @@ class CreatePedidosTable extends Migration
             $table->string('cliente');
             $table->string('producto');
             $table->string('precio');
+            $table->string('picture');
             $table->string('tracking');
             $table->timestamps();
         });
