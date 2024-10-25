@@ -145,3 +145,16 @@ Este proyecto de Laravel 8 implementa un sistema de autenticación. Los usuarios
 1. Regístrate o inicia sesión para acceder al dashboard.
 2. Los usuarios no registrados solo pueden ver la landingpage.
 3. La barra de navegación cambia según si el usuario está autenticado o no.
+
+# Evidencia 2 - Sistema de Gestión de Pedidos
+
+Este proyecto es un sistema de gestión de pedidos desarrollado en Laravel 8. Permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre una entidad llamada **Pedido**. Además, cuenta con validaciones de datos y manejo de imágenes (pendiente de implementación).
+
+## Funcionalidades
+
+- Listar todos los pedidos.
+- Ver detalles de un pedido específico.
+- Crear un nuevo pedido con campos como cliente, producto, precio y tracking.
+- Editar un pedido existente.
+- Eliminar un pedido.
+- **Próxima funcionalidad**: Añadir y mostrar imágenes para cada pedido.
