@@ -158,3 +158,14 @@ Este proyecto es un sistema de gestión de pedidos desarrollado en Laravel 8. Pe
 - Editar un pedido existente.
 - Eliminar un pedido.
 - **Próxima funcionalidad**: Añadir y mostrar imágenes para cada pedido.
+
+# Actividad 11: Menus Project
+
+Este proyecto es una aplicación básica en PHP Laravel 8 que muestra un menú de navegación con tres secciones: Home, Photos y Contact. Cada sección tiene una vista única, y la sección activa en el menú se resalta cuando se accede. Además, un footer aparece en todas las vistas con información sobre quién realiza la actividad.
+
+## Estructura del Proyecto
+
+- **Home**: Página principal del proyecto.
+- **Photos**: Galería de fotos (ejemplo).
+- **Contact**: Página de contacto.
+- **Footer**: Información sobre la actividad, mostrada en todas las vistas.
