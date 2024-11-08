@@ -169,3 +169,14 @@ Este proyecto es una aplicación básica en PHP Laravel 8 que muestra un menú d
 - **Photos**: Galería de fotos (ejemplo).
 - **Contact**: Página de contacto.
 - **Footer**: Información sobre la actividad, mostrada en todas las vistas.
+
+# Task 9 - Laravel 8 with AdminLTE 3 Integration
+
+Este proyecto utiliza Laravel 8 integrado con AdminLTE 3 como plantilla de administración. Es una continuación de la Actividad 11, donde las secciones y funcionalidades se adaptaron al diseño de AdminLTE.
+
+## Características del Proyecto
+
+1. **Integración de AdminLTE 3**: Se utilizó el paquete `jeroennoten/laravel-adminlte` para implementar la plantilla en Laravel 8.
+2. **Personalización del menú lateral**: Se configuraron las opciones del menú lateral para incluir las secciones de la Actividad 11.
+3. **Vistas personalizadas**: Se asignó contenido específico a cada sección de acuerdo con la Actividad 11.
+4. **Footer personalizado**: Se añadió información específica al footer para identificar al autor y la actividad.
