@@ -194,3 +194,18 @@ La aplicación utiliza Vue.js para mostrar una lista de frases relacionadas con 
 - Lista dinámica generada con Vue.js y la directiva `v-for`.
 - Diseño limpio y responsivo utilizando CSS.
 - Estructura de proyecto modular con archivos HTML, JavaScript y CSS separados.
+
+# Tarea 10: Chuck Norris Facts - Vue.js & Bootstrap Cards
+
+Este proyecto es una extensión/modificación de la Actividad 12, donde se utiliza Vue.js para mostrar hechos curiosos de Chuck Norris en un formato visual más atractivo utilizando Bootstrap. Cada hecho se presenta como una tarjeta con imagen y texto.
+
+## Descripción
+
+La aplicación muestra datos sobre Chuck Norris en tarjetas dinámicas generadas a partir de un componente Vue llamado `<chuck-card>`. Los datos incluyen una imagen (`icon_url`) y un texto (`value`). La interfaz utiliza Bootstrap para el diseño responsivo.
+
+### Características
+
+- **Datos dinámicos**: Cada tarjeta se genera automáticamente a partir de los datos proporcionados.
+- **Componente reutilizable**: Las tarjetas se crean utilizando un componente Vue llamado `<chuck-card>`.
+- **Diseño responsivo**: Se utiliza Bootstrap para que las tarjetas se adapten a diferentes tamaños de pantalla.
+- **Iteración eficiente**: Se utiliza la directiva `v-for` de Vue para iterar sobre el array de datos.
