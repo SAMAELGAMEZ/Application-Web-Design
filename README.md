@@ -180,3 +180,17 @@ Este proyecto utiliza Laravel 8 integrado con AdminLTE 3 como plantilla de admin
 2. **Personalización del menú lateral**: Se configuraron las opciones del menú lateral para incluir las secciones de la Actividad 11.
 3. **Vistas personalizadas**: Se asignó contenido específico a cada sección de acuerdo con la Actividad 11.
 4. **Footer personalizado**: Se añadió información específica al footer para identificar al autor y la actividad.
+
+# Actividad 12: Chuck Norris Facts - Vue.js App
+
+Este es un proyecto simple que muestra datos curiosos de Chuck Norris utilizando Vue.js. El objetivo es aprender a trabajar con datos dinámicos y estilizar una lista interactiva.
+
+## Descripción
+
+La aplicación utiliza Vue.js para mostrar una lista de frases relacionadas con Chuck Norris, iterando sobre un conjunto de datos proporcionado. La interfaz es sencilla y estilizada, brindando una experiencia de usuario atractiva.
+
+## Características
+
+- Lista dinámica generada con Vue.js y la directiva `v-for`.
+- Diseño limpio y responsivo utilizando CSS.
+- Estructura de proyecto modular con archivos HTML, JavaScript y CSS separados.
