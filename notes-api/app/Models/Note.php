@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Note extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'title',
+        'author',
+        'date_and_time',
+        'body',
+        'classification',
+    ];
 }
