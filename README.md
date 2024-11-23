@@ -220,3 +220,14 @@ API para la gestión de notas personales, desarrollada con **Laravel 8**. Esta a
 - Validación de datos al crear y actualizar notas.
 - Respuestas JSON para integración sencilla con clientes como Postman o aplicaciones frontend.
 - Estructura RESTful para facilitar su uso.
+
+# Tarea 12: Movie Characters API
+
+API para la gestión de personajes de películas y series, desarrollada con **Laravel 8**.
+
+## 🚀 Características
+
+- CRUD completo para películas/series y personajes.
+- Relación entre películas/series y sus personajes.
+- Validación de datos.
+- Respuestas JSON.
