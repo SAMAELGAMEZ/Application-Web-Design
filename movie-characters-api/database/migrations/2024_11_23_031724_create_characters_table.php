@@ -16,13 +16,15 @@ class CreateCharactersTable extends Migration
         Schema::create('characters', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('classification');
-            $table->date('release_date');
-            $table->text('review')->nullable();
-            $table->string('season')->nullable(); // Solo para series
+            $table->unsignedBigInteger('movie_id');
+            $table->string('picture')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
+
+            $table->foreign('movie_id')->references('id')->on('movies')->onDelete('cascade');
         });
     }
+
 
     /**
      * Reverse the migrations.
