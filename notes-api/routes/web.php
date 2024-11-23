@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\NoteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +16,3 @@ use App\Http\Controllers\Api\NoteController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::apiResource('notes', NoteController::class);
-

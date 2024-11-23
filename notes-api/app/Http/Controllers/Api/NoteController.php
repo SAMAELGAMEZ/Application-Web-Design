@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class NoteController extends Controller
 {
+    // Listar todas las notas
     public function index()
     {
         return response()->json(Note::all(), 200);
@@ -28,6 +29,7 @@ class NoteController extends Controller
         return response()->json($note, 201);
     }
 
+    // Mostrar una nota específica
     public function show($id)
     {
         $note = Note::find($id);
@@ -39,6 +41,7 @@ class NoteController extends Controller
         return response()->json($note, 200);
     }
 
+    // Actualizar una nota existente
     public function update(Request $request, $id)
     {
         $note = Note::find($id);
@@ -52,6 +55,7 @@ class NoteController extends Controller
         return response()->json($note, 200);
     }
 
+    // Eliminar una nota
     public function destroy($id)
     {
         $note = Note::find($id);
@@ -62,6 +66,6 @@ class NoteController extends Controller
 
         $note->delete();
 
-        return response()->json(['message' => 'Note deleted'], 200);
+        return response()->json(['message' => 'Note deleted successfully'], 200);
     }
 }
