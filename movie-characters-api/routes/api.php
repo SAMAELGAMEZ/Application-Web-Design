@@ -16,8 +16,9 @@ use App\Http\Controllers\Api\CharacterController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('api')->group(function () {
+    Route::apiResource('movies', MovieController::class);
+    Route::apiResource('characters', CharacterController::class);
 });
 
 Route::apiResource('movies', MovieController::class);

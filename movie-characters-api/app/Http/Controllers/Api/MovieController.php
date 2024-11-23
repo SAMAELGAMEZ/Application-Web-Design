@@ -22,9 +22,9 @@ class MovieController extends Controller
             'review' => 'nullable|string',
             'season' => 'nullable|string',
         ]);
-
+    
         $movie = Movie::create($validated);
-
+    
         return response()->json($movie, 201);
     }
 

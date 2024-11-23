@@ -10,8 +10,10 @@ class CharacterController extends Controller
 {
     public function index()
     {
-        return response()->json(Character::with('movie')->get(), 200);
+        $characters = Character::with('movie')->get();
+        return response()->json($characters);
     }
+
 
     public function store(Request $request)
     {
@@ -26,6 +28,7 @@ class CharacterController extends Controller
 
         return response()->json($character, 201);
     }
+
 
     public function show($id)
     {
