@@ -209,3 +209,14 @@ La aplicación muestra datos sobre Chuck Norris en tarjetas dinámicas generadas
 - **Componente reutilizable**: Las tarjetas se crean utilizando un componente Vue llamado `<chuck-card>`.
 - **Diseño responsivo**: Se utiliza Bootstrap para que las tarjetas se adapten a diferentes tamaños de pantalla.
 - **Iteración eficiente**: Se utiliza la directiva `v-for` de Vue para iterar sobre el array de datos.
+
+# Actividad 14: Notes API
+
+API para la gestión de notas personales, desarrollada con **Laravel 8**. Esta aplicación permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar notas, con campos como título, autor, fecha y hora, cuerpo de la nota y clasificación.
+
+## 🚀 Características
+
+- CRUD completo para la gestión de notas.
+- Validación de datos al crear y actualizar notas.
+- Respuestas JSON para integración sencilla con clientes como Postman o aplicaciones frontend.
+- Estructura RESTful para facilitar su uso.
