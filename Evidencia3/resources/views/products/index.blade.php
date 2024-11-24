@@ -12,7 +12,7 @@
       </div><br /> 
     @endif 
     <div class="row mb-3"> 
-      <a class="btn btn-primary" href="{{ route('products.create') }}">Agregar Producto</a> 
+      <a class="btn btn-primary" href="{{ route('products.create') }}">Agregar</a>
     </div> 
 
     <table class="table table-striped"> 
